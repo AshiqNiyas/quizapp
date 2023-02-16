@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    background-color: #f2e88f;
+}
+
+#menu{
+    padding-right: 1rem;
+}
+
+.nav{
+    padding-right: 1rem;
+    list-style: none;
+    display: flex;
+    gap:2rem;
+    display: none;
+}
+
+.header{
+    margin: auto;
+    max-width: 1200px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    background-color: #00ADB8;
+    font-size: 20px;
+    font-weight: semibold;
+}
+
+.header h4{
+    padding-left: 1rem;
+}
+
+.welcomecontainer{
+    margin-top: 2rem;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 3rem;
+}
+.nameinput{
+    margin-left: auto;
+    margin-right: auto;
+    width: 252px;
+    height: 40px;
+    border: none;
+}
+
+.stats{
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 1rem 0 1rem;
+}
+
+.question{
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.options{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+    margin: 3rem auto 0 auto;
+
+}
+.optionbtn{
+    width: 100%;
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+}
+
+.questioncontainer{
+    display: none;
+}
+
+.start{
+    width: 156px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00ADB8;
+    color:aliceblue;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.result{
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.playbtn{
+    color: white;
+    background-color: #00ADB8;
+    border-radius: 8px;
+    border: none;
+    width: 156px;
+    height: 45px;
+}
+
+@media(min-width:747px){
+    .nav{
+        display: flex;
+    }
+    #menu{
+        display: none;
+    }
+}

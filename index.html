@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h4>Qwiz</h4>
+            <img src="menu.svg" id="menu" alt="">
+            <ul class="nav">
+                <li>High score</li>
+                <li>About</li>
+                <li>contact</li>
+            </ul>
+        </div>
+
+        <div class="welcomecontainer" id="welcomecontainer">
+                <h3>Hi welcome to qwiz</h3>
+                <h3>Enter your name</h3>
+                <input type="text" class="nameinput">
+                <button id="start" class="start" onclick="showname()">play</button>
+        </div>
+
+        <div class="questioncontainer" id="questioncontainer">
+            <div class="stats">
+                <h3>Hi <span id="playername"></span></h3>
+                <h3> score : <span id="playerscore"></span>/5</h3>
+            </div>
+            <div class="question">
+                <h2 class="questiondis"></h2>
+            </div>
+            <div class="options">
+                
+            </div>
+        </div>
+
+        <div class="result">
+            <h3>your result is <span id="resultscore"></span></h3>
+            <button class="playbtn" id="playagain" onclick="resetgame()">play again</button>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
