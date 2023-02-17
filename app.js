@@ -51,7 +51,6 @@ async function getquiz(){
     try{
       let res = await fetch(url)
       questions = await res.json();
-      console.log(questions)
     }
     catch(err){
       console.log(err)

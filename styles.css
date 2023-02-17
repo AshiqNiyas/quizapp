@@ -127,8 +127,8 @@
 }
 
 .result{
+    display: none;
     height:500px;
-    display: flex;
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
